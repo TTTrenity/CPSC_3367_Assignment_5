@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="@dimen/spacing_large">
+
+    <TextView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:background="@drawable/shape_circle"
+        android:backgroundTint="@color/grey_80"
+        android:textColor="@color/grey_3"
+        android:gravity="center"
+        android:textSize="@dimen/icon_text_size"
+        android:text="T"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trenity Roberts"
+        android:textSize="@dimen/name_size"
+        android:textColor="@color/grey_100_"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+
+        app:layout_constraintStart_toEndOf="@id/icon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="29 Aug 2014"
+        android:textSize="@dimen/date_size"
+        android:textColor="@color/colorPrimaryLight"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="trenityroberts@gmail.com"
+        android:textSize="@dimen/email_size"
+        android:textColor="@color/grey_100_"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="@id/from"
+        app:layout_constraintTop_toBottomOf="@id/from" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="This is a test of the preview to see if it is working right."
+        android:textSize="@dimen/message_size"
+        android:textColor="@color/grey_40"
+
+        app:layout_constraintStart_toStartOf="@id/email"
+        app:layout_constraintTop_toBottomOf="@id/email" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
